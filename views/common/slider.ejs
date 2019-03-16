@@ -1,0 +1,44 @@
+<nav class="side-navbar">
+          <!-- Sidebar Header-->
+          <div class="sidebar-header d-flex align-items-center">
+            <div class="avatar"><img
+        src="<%= icon ? icon : 'https://avatars1.githubusercontent.com/u/47855290?s=460&v=4' %>" alt="..."
+        class="img-fluid rounded-circle"></div>
+            <!-- <div class="avatar"><img src="img/avatar-1.jpg" alt="..." class="img-fluid rounded-circle"></div> -->
+            <div class="title">
+              <h1 class="h4"><%= username %></h1>
+              <p>职业</p>
+            </div>
+          </div>
+          <!-- Sidebar Navidation Menus--><span class="heading">导航</span>
+          <ul class="list-unstyled">
+            <li class="<%= dataName=='home'?'active':'' %>"><a href="/admin/home?dataName=home&start=1"> <i class="icon-home "></i>首页 </a></li>
+            <li>
+                <a href="#exampledropdownDropdown1" aria-expanded="false" data-toggle="collapse"> <i
+                  class="icon-interface-windows"></i>商品 </a>
+              <ul id="exampledropdownDropdown1" class="collapse list-unstyled ">
+                <li class="<%= dataName=='kitchen'?'active':'' %>"><a href="/admin/product?dataName=kitchen&start=1">厨房家具</a></li>
+                <li class="<%= dataName=='beauty'?'active':'' %>"><a href="/admin/product?dataName=beauty&start=1">美妆个护</a></li>
+                <li class="<%= dataName=='food'?'active':'' %>"><a href="/admin/product?dataName=food&start=1">食品健康</a></li>
+                <li class="<%= dataName=='clothing'?'active':'' %>"><a href="/admin/product?dataName=clothing&start=1">服饰家纺</a></li>
+                <li class="<%= dataName=='appliances'?'active':'' %>"><a href="/admin/product?dataName=appliances&start=1">家具家电</a></li>
+                
+              </ul>
+            </li>
+            <li class="<%= dataName=='user'?'active':'' %>"><a href="/admin/user?dataName=user"> <i class="fa icon-picture"></i>用户 </a>
+            </li>
+            <li class="<%= dataName=='banner'?'active':'' %>"><a href="/admin/banner?dataName=banner"> <i class="fa icon-flask"></i>主屏广告 </a>
+            </li>
+            <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i
+                  class="icon-interface-windows"></i>下拉 </a>
+              <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
+                <li><a href="#">菜单</a></li>
+                <li><a href="#">菜单</a></li>
+                <li><a href="#">菜单</a></li>
+              </ul>
+            </li>
+          </ul><span class="heading">扩展</span>
+          <ul class="list-unstyled">
+            <li> <a href="#"> <i class="icon-flask"></i>菜单1 </a></li>
+          </ul>
+        </nav>
